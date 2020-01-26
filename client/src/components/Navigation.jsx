@@ -6,10 +6,10 @@ import { setNavigationView } from"../../../redux/navigation/navigation.action.js
 const Navigation = (props) => {
   return (
     <div id="navigation">
-      <button onClick={() => props.setNavigationView("HOME")}>HOME</button>
-      <button onClick={() => props.setNavigationView("ARTWORK")}>ARTWORK</button>
-      <button onClick={() => props.setNavigationView("CONTACT")}>CONTACT</button>
-      <button onClick={() => props.setNavigationView("ABOUT")}>ABOUT</button>
+      <button className="navigation" onClick={() => props.setNavigationView("HOME")}>HOME</button>
+      <button className="navigation" onClick={() => props.setNavigationView("ARTWORK")}>ARTWORK</button>
+      <button className="navigation" onClick={() => props.setNavigationView("CONTACT")}>CONTACT</button>
+      <button className="navigation" onClick={() => props.setNavigationView("ABOUT")}>ABOUT</button>
     </div>
   )
 }
