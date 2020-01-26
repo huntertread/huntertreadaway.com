@@ -1,13 +1,23 @@
 import React, { Component } from "react"
+import { connect } from "react-redux";
 
-const Navigation = ({ navigate }) => {
+import { setNavigationView } from"../../../redux/navigation/navigation.action.js"
+
+const Navigation = (props) => {
   return (
-    <div>
-      <button onClick={() => navigate("HOME")}>HOME</button>
-      <button onClick={() => navigate("DIGITAL")}>DIGITAL</button>
-      <button onClick={() => navigate("CONTACT")}>CONTACT</button>
+    <div id="navigation">
+      <button onClick={() => props.setNavigationView("HOME")}>HOME</button>
+      <button onClick={() => props.setNavigationView("ARTWORK")}>ARTWORK</button>
+      <button onClick={() => props.setNavigationView("CONTACT")}>CONTACT</button>
+      <button onClick={() => props.setNavigationView("ABOUT")}>ABOUT</button>
     </div>
   )
 }
 
-export default Navigation
+const mapDispatchToProps = dispatch => {
+  return {
+    setNavigationView: render => dispatch(setNavigationView(render))
+  };
+};
+
+export default connect(null, mapDispatchToProps)(Navigation);
