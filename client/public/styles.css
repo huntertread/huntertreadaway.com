@@ -1,17 +1,180 @@
-/* navigation */
+/* BODY */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: limegreen;
+}
+
+/* NAVIGATION */
+#navigation {
+  background-color: #141618;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navlogo {
+  color: white;
+  align-self: flex-start;
+  margin-left: 70px;
+}
+
+#navbuttons {
+  margin-right: 70px;
+}
+
 button.navigation {
   margin: 5px;
-  width: 100px;
   border-width: 0px;
   background-color: rgba(0, 0, 0, 0);
-  color: yellow;
+  color: darkgray;
 }
 
 button.navigation:hover {
   cursor: pointer;
 }
 
-/* body */
-body {
+/* FOOTER */
+#footer {
+  margin: 0;
+  background-color: #141618;
+  color: darkgray;
+  display: flex;
+  flex-direction: column;
+}
+
+#footernav {
+  border-color: darkgray;
+  border-style: solid;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  text-align: center;
+}
+
+#footer button {
+  margin: 5px;
+  border-width: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  color: darkgray;
+}
+
+#footer button:hover {
+  cursor: pointer;
+}
+
+#footerexternallinks {
+  text-align: center;
+}
+
+#footerexternallinks a {
+  color: darkgray;
+  text-decoration: none;
+}
+
+/* HOME PAGE */
+#intro {
   background-image: url("https://blog.spoongraphics.co.uk/wp-content/uploads/2016/08/thumbnail.jpg");
+  margin: 0;
+  height: 600px;
+}
+
+#blurb {
+  background-image: url("https://huntertreadportfolio.s3-us-west-1.amazonaws.com/gettyimages-495845075.jpg");
+  margin: 0;
+  height: 800px;
+  display: flex;
+  align-content: center;
+}
+
+#aboutme {
+  margin: 100px;
+  width: 600px;
+  height: 600px;
+  background-color: rgba(0, 0, 0, .6);
+  color: darkgray;
+  border-color: limegreen;
+  border-style: solid;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+}
+
+#aboutme img {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+}
+
+#aboutme p {
+  margin: 30px;
+}
+
+#contact {
+  background-image: url("https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2015/09/ancient-aliens-S12-desktop-2048x1152.jpg?w=1440");
+  margin: 0;
+  height: 600px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#contactme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  margin: 100px;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, .6);
+  color: darkgray;
+  border-color: limegreen;
+  border-style: solid;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+}
+
+#contactme label {
+  margin: 5px;
+}
+#contactme input {
+  width: 250px;
+  background-color: #141618;
+  border-color: limegreen;
+  color: white;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+}
+#contactme textarea {
+  width: 250px;
+  height: 100px;
+  background-color: #141618;
+  border-color: limegreen;
+  color: white;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+}
+
+#contactme button {
+  width: 250px;
+  margin: 5px;
+  background-color: limegreen;
+  color: #141618;
+  border-color: limegreen;
+  border-radius: 10px;
+}
+
+#contactme button:hover {
+  cursor: pointer;
 }
