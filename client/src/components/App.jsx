@@ -4,8 +4,7 @@ import { Provider } from "react-redux";
 import { store } from "../../../redux/store.js";
 import { selectNavigationView } from "../../../redux/navigation/navigation.selector.js"
 import Home from "./Home.jsx"
-import About from "./About.jsx"
-import Contact from "./Contact.jsx"
+import Projects from "./Projects.jsx"
 import Artwork from "./Artwork.jsx"
 
 class App extends Component {
@@ -26,16 +25,10 @@ class App extends Component {
           <Artwork />
         </div>
       )
-    } else if (this.props.selectNavigationView === "ABOUT") {
+    } else if (this.props.selectNavigationView === "PROJECTS") {
       return (
         <div>
-          <About />
-        </div>
-      )
-    } else if (this.props.selectNavigationView === "CONTACT") {
-      return (
-        <div>
-          <Contact />
+          <Projects />
         </div>
       )
     } else {

@@ -7,10 +7,9 @@ const Footer = (props) => {
   return (
     <div id="footer">
       <div id="footernav">
-        <button className="footernavigation" onClick={() => props.setNavigationView("HOME")}>HOME</button>
-        <button className="footernavigation" onClick={() => props.setNavigationView("ARTWORK")}>ARTWORK</button>
-        <button className="footernavigation" onClick={() => props.setNavigationView("CONTACT")}>CONTACT</button>
-        <button className="footernavigation" onClick={() => props.setNavigationView("ABOUT")}>ABOUT</button>
+        <button className="navigation" onClick={() => props.setNavigationView("HOME")}>HOME</button>
+        <button className="navigation" onClick={() => props.setNavigationView("PROJECTS")}>PROJECTS</button>
+        <button className="navigation" onClick={() => props.setNavigationView("ARTWORK")}>ARTWORK</button>
       </div>
       <div id="footerexternallinks">
         <a target="_blank" href="https://www.linkedin.com/in/huntertread/">linkedIn</a><br/>

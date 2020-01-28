@@ -22,6 +22,10 @@ body {
   margin-left: 70px;
 }
 
+#navlogo:hover {
+  cursor: pointer;
+}
+
 #navbuttons {
   margin-right: 70px;
 }
@@ -127,7 +131,7 @@ button.navigation:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: space-around;
+  text-align: left;
   margin: 100px;
   width: 300px;
   height: 300px;
@@ -144,6 +148,7 @@ button.navigation:hover {
 #contactme label {
   margin: 5px;
 }
+
 #contactme input {
   width: 250px;
   background-color: #141618;
@@ -154,6 +159,7 @@ button.navigation:hover {
   border-top-width: 0px;
   border-bottom-width: 1px;
 }
+
 #contactme textarea {
   width: 250px;
   height: 100px;
@@ -177,4 +183,33 @@ button.navigation:hover {
 
 #contactme button:hover {
   cursor: pointer;
+}
+
+/* ARTWORK PAGE */
+#artworkpage {
+  background-color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#artworkpage img {
+  margin: 10px;
+  width: 220px;
+  height: 220px;
+}
+
+#artworkpage img.tall {
+  margin: 10px;
+  width: 220px;
+  height: 300px;
+}
+
+/* PROJECTS PAGE */
+#projectspage {
+  background-color: #141618;
+  min-height: 1000px;
+  margin: 0;
 }
