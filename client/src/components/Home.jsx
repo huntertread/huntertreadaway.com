@@ -1,9 +1,11 @@
 import React, { Component } from "react"
+import Intro3d from "./Intro3d.jsx"
 
 const Home = () => {
   return (
     <div>
     <div id="intro">
+      <Intro3d />
     </div>
     <div id="blurb">
       <div id="aboutme">
@@ -24,4 +26,5 @@ const Home = () => {
     </div>
   )
 }
- export default Home;
+
+export default Home;

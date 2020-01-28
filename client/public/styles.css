@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: limegreen;
+  background-color: #141618;
 }
 
 /* NAVIGATION */
@@ -48,11 +48,14 @@ button.navigation:hover {
   color: darkgray;
   display: flex;
   flex-direction: column;
+  /* text-align: center; */
 }
 
 #footernav {
   border-color: darkgray;
   border-style: solid;
+  /* max-width: 600px;
+  min-width: 200px; */
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -82,9 +85,12 @@ button.navigation:hover {
 
 /* HOME PAGE */
 #intro {
-  background-image: url("https://blog.spoongraphics.co.uk/wp-content/uploads/2016/08/thumbnail.jpg");
+  /* background-image: url("https://blog.spoongraphics.co.uk/wp-content/uploads/2016/08/thumbnail.jpg"); */
   margin: 0;
   height: 600px;
+  display: flex;
+  justify-content: center;
+  color: red;
 }
 
 #blurb {

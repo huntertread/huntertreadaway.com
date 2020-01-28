@@ -3,10 +3,20 @@ import React, { Component } from "react"
 const Artwork = () => {
   return (
     <div id="artworkpage">
+      <div id="streetart">
+        <img src=""></img>
+        <img src=""></img>
+        <img src=""></img>
+      </div>
       <div id="digitalcharacters">
         <img className="tall" src="https://huntertreadportfolio.s3-us-west-1.amazonaws.com/GestationCrate.png"></img>
         <img className="tall" src="https://huntertreadportfolio.s3-us-west-1.amazonaws.com/GrandmaMan.png"></img>
         <img className="tall" src="https://huntertreadportfolio.s3-us-west-1.amazonaws.com/Rage.png"></img>
+      </div>
+      <div id="sculpture">
+        <img src=""></img>
+        <img src=""></img>
+        <img src=""></img>
       </div>
       <div id="digitalsquares">
         <img src="https://huntertreadportfolio.s3-us-west-1.amazonaws.com/blue.png"></img>
