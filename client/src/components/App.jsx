@@ -6,6 +6,7 @@ import { selectNavigationView } from "../../../redux/navigation/navigation.selec
 import Home from "./Home.jsx"
 import Projects from "./Projects.jsx"
 import Artwork from "./Artwork.jsx"
+import Modal from "./Modal.jsx"
 
 class App extends Component {
   constructor() {
@@ -29,6 +30,12 @@ class App extends Component {
       return (
         <div>
           <Projects />
+        </div>
+      )
+    } else if (this.props.selectNavigationView === "MODAL") {
+      return (
+        <div>
+          <Modal />
         </div>
       )
     } else {

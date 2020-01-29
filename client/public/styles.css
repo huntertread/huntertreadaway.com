@@ -49,22 +49,25 @@ button.navigation:hover {
   display: flex;
   flex-direction: column;
   /* text-align: center; */
+  /* max-width: 1000px; */
 }
 
 #footernav {
   border-color: darkgray;
   border-style: solid;
+  margin-left: 50px;
+  margin-right: 50px;
   /* max-width: 600px;
   min-width: 200px; */
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 1px;
-  text-align: center;
+  text-align: left;
 }
 
 #footer button {
-  margin: 5px;
+  /* margin: 5px; */
   border-width: 0px;
   background-color: rgba(0, 0, 0, 0);
   color: darkgray;
@@ -75,10 +78,14 @@ button.navigation:hover {
 }
 
 #footerexternallinks {
-  text-align: center;
+  margin-top: 5px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  text-align: right;
 }
 
 #footerexternallinks a {
+  margin: 10px;
   color: darkgray;
   text-decoration: none;
 }
@@ -116,9 +123,12 @@ button.navigation:hover {
 }
 
 #aboutme img {
-  width: 100px;
-  height: 100px;
-  margin: 30px;
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  vertical-align: middle;
+  border-radius: 50%;
+  /* float: left; */
 }
 
 #aboutme p {
@@ -202,15 +212,20 @@ button.navigation:hover {
 }
 
 #artworkpage img {
+  object-fit: cover;
   margin: 10px;
   width: 220px;
   height: 220px;
 }
 
-#artworkpage img.tall {
+/* #artworkpage img.tall {
   margin: 10px;
   width: 220px;
   height: 300px;
+} */
+
+.rotate {
+  transform: rotate(90deg);
 }
 
 /* PROJECTS PAGE */
@@ -218,4 +233,14 @@ button.navigation:hover {
   background-color: #141618;
   min-height: 1000px;
   margin: 0;
+}
+
+/* MODAL */
+#modal {
+  z-index: 1;
+}
+
+#modal img {
+  height: 50%;
+  width: 50%;
 }
