@@ -12,7 +12,7 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
   navigationView: NavigationReducer,
-  modalImg: ModalReducer
+  modalState: ModalReducer
 });
 
 export default persistReducer(persistConfig, rootReducer);

@@ -4,3 +4,10 @@ export const setModalImg = url => {
     payload: url
   };
 };
+
+export const setModalDisplay = display => {
+  return {
+    type: "SET_DISPLAY",
+    payload: display
+  };
+};

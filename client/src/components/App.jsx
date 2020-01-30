@@ -1,12 +1,11 @@
 import React, { Component } from "react"
-import { connect } from "react-redux";
-import { Provider } from "react-redux";
-import { store } from "../../../redux/store.js";
+import { connect } from "react-redux"
+import { Provider } from "react-redux"
+import { store } from "../../../redux/store.js"
 import { selectNavigationView } from "../../../redux/navigation/navigation.selector.js"
 import Home from "./Home.jsx"
 import Projects from "./Projects.jsx"
 import Artwork from "./Artwork.jsx"
-import Modal from "./Modal.jsx"
 
 class App extends Component {
   constructor() {
@@ -30,12 +29,6 @@ class App extends Component {
       return (
         <div>
           <Projects />
-        </div>
-      )
-    } else if (this.props.selectNavigationView === "MODAL") {
-      return (
-        <div>
-          <Modal />
         </div>
       )
     } else {

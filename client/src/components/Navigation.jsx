@@ -1,6 +1,5 @@
 import React, { Component } from "react"
-import { connect } from "react-redux";
-
+import { connect } from "react-redux"
 import { setNavigationView } from"../../../redux/navigation/navigation.action.js"
 
 const Navigation = (props) => {
@@ -23,4 +22,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(null, mapDispatchToProps)(Navigation);
+export default connect(null, mapDispatchToProps)(Navigation)

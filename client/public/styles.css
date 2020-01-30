@@ -218,12 +218,6 @@ button.navigation:hover {
   height: 220px;
 }
 
-/* #artworkpage img.tall {
-  margin: 10px;
-  width: 220px;
-  height: 300px;
-} */
-
 .rotate {
   transform: rotate(90deg);
 }
@@ -237,10 +231,20 @@ button.navigation:hover {
 
 /* MODAL */
 #modal {
-  z-index: 1;
+  background-color: rgba(0, 0, 0, .8);
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  position: fixed;
 }
 
 #modal img {
   height: 50%;
   width: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

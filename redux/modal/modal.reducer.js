@@ -1,5 +1,6 @@
 const INITIAL_STATE = {
-  url: ""
+  url: "",
+  display: "none"
 }
 
 const ModalReducer = (state = INITIAL_STATE, action) => {
@@ -8,6 +9,11 @@ const ModalReducer = (state = INITIAL_STATE, action) => {
       return ({
         ...state,
         url: action.payload
+      });
+    case 'SET_DISPLAY':
+      return ({
+        ...state,
+        display: action.payload
       });
     default:
       return state;

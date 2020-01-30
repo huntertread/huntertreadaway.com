@@ -8,4 +8,4 @@ const Resume = () => {
   )
 }
 
-export default Home;
+export default Home

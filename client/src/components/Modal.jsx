@@ -1,13 +1,11 @@
 import React, { Component } from "react"
-import { connect } from "react-redux";
-
-import { selectModalImg } from "../../../redux/modal/modal.selector.js"
-
-import { setNavigationView } from"../../../redux/navigation/navigation.action.js"
+import { connect } from "react-redux"
+import { selectModalImg, selectModalDisplay } from "../../../redux/modal/modal.selector.js"
+import { setModalDisplay } from"../../../redux/modal/modal.action.js"
 
 const Modal = (props) => {
   return (
-    <div id="modal" onClick={() => {props.setNavigationView("ARTWORK")}}>
+    <div id="modal" style={ {display: props.selectModalDisplay} } onClick={() => {props.setModalDisplay("none")}}>
       <img src={props.selectModalImg}></img>
     </div>
   )
@@ -16,12 +14,13 @@ const Modal = (props) => {
 const mapStateToProps = state => {
   return {
     selectModalImg: selectModalImg(state),
+    selectModalDisplay: selectModalDisplay(state)
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
-    setNavigationView: render => dispatch(setNavigationView(render))
+    setModalDisplay: render => dispatch(setModalDisplay(render))
   };
 };
 

@@ -1,6 +1,5 @@
 import React, { Component } from "react"
-import { connect } from "react-redux";
-
+import { connect } from "react-redux"
 import { setNavigationView } from"../../../redux/navigation/navigation.action.js"
 
 class Footer extends Component {
