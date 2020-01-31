@@ -1,5 +1,6 @@
 const INITIAL_STATE = {
-  view: "HOME"
+  view: "HOME",
+  hamburger: "none"
 }
 
 const NavigationReducer = (state = INITIAL_STATE, action) => {
@@ -8,6 +9,11 @@ const NavigationReducer = (state = INITIAL_STATE, action) => {
       return ({
         ...state,
         view: action.payload
+      });
+    case 'SET_HAMBURGER':
+      return ({
+        ...state,
+        hamburger: action.payload
       });
     default:
       return state;

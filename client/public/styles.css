@@ -5,8 +5,16 @@ body {
   background-color: #141618;
 }
 
-/* NAVIGATION */
-#navigation {
+@media only screen and (max-width: 550px) {
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lime;
+  }
+}
+
+/* DT NAVIGATION */
+#dtnavigation {
   background-color: #141618;
   width: 100%;
   display: flex;
@@ -41,6 +49,44 @@ button.navigation:hover {
   cursor: pointer;
 }
 
+/* MOBILE NAVIGATION */
+#hamburgernavlogo p{
+  color: white;
+  margin: 60px 50px 50px 200px;
+  transform: scale(5);
+}
+
+.hamburger button {
+  color: white;
+  transform: scale(10);
+  margin: 60px 50px 0px 0px;
+}
+
+#mobilenavigation {
+  background-color: limegreen;
+  width: 100%;
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#openburger {
+  background-color: limegreen;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  top: 0%;
+  left: 0%;
+  position: fixed;
+}
+
+#openburger button {
+  margin: 100px 0px 100px 450px;
+}
+
 /* FOOTER */
 #footer {
   margin: 0;
@@ -48,8 +94,6 @@ button.navigation:hover {
   color: darkgray;
   display: flex;
   flex-direction: column;
-  /* text-align: center; */
-  /* max-width: 1000px; */
 }
 
 #footernav {
@@ -57,8 +101,6 @@ button.navigation:hover {
   border-style: solid;
   margin-left: 50px;
   margin-right: 50px;
-  /* max-width: 600px;
-  min-width: 200px; */
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -67,7 +109,6 @@ button.navigation:hover {
 }
 
 #footer button {
-  /* margin: 5px; */
   border-width: 0px;
   background-color: rgba(0, 0, 0, 0);
   color: darkgray;
@@ -90,7 +131,8 @@ button.navigation:hover {
   text-decoration: none;
 }
 
-/* HOME PAGE */
+/* DT HOME PAGE */
+/* about me */
 #intro {
   /* background-image: url("https://blog.spoongraphics.co.uk/wp-content/uploads/2016/08/thumbnail.jpg"); */
   margin: 0;
@@ -128,13 +170,13 @@ button.navigation:hover {
   margin: 20px;
   vertical-align: middle;
   border-radius: 50%;
-  /* float: left; */
 }
 
 #aboutme p {
   margin: 30px;
 }
 
+/* contact section */
 #contact {
   background-image: url("https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2015/09/ancient-aliens-S12-desktop-2048x1152.jpg?w=1440");
   margin: 0;
@@ -201,6 +243,44 @@ button.navigation:hover {
   cursor: pointer;
 }
 
+/* MOBILE HOME PAGE */
+/* about me */
+#mobileblurb {
+  background-image: url("https://huntertreadportfolio.s3-us-west-1.amazonaws.com/gettyimages-495845075.jpg");
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-content: center;
+}
+
+#mobileaboutme {
+  margin: 100px;
+  width: 100%;
+  height: 1500px;
+  background-color: rgba(0, 0, 0, .6);
+  color: darkgray;
+  border-color: limegreen;
+  border-style: solid;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+}
+
+#mobileaboutme img {
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+#mobileaboutme p {
+  margin: 30px;
+  font-size: 50px;
+}
+
+
 /* ARTWORK PAGE */
 #artworkpage {
   background-color: white;
@@ -241,8 +321,7 @@ button.navigation:hover {
 }
 
 #modal img {
-  height: 50%;
-  width: 50%;
+  height: 80%;
   position: fixed;
   top: 50%;
   left: 50%;

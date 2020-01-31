@@ -6,3 +6,8 @@ export const selectNavigationView = createSelector(
   [selectNavigation],
   navigationView => navigationView.view
 );
+
+export const selectHamburgerState = createSelector(
+  [selectNavigation],
+  navigationView => navigationView.hamburger
+);

@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
 import { setNavigationView } from"../../../redux/navigation/navigation.action.js"
+import MediaQuery from "react-responsive"
 
 class Footer extends Component {
   constructor() {
@@ -15,17 +16,19 @@ class Footer extends Component {
 
   render() {
     return (
-      <div id="footer">
-        <div id="footernav">
-          <button className="navigation" onClick={() => {this.props.setNavigationView("HOME"); this.goToTop()}}>HOME</button>
-          <button className="navigation" onClick={() => {this.props.setNavigationView("PROJECTS"); this.goToTop()}}>PROJECTS</button>
-          <button className="navigation" onClick={() => {this.props.setNavigationView("ARTWORK"); this.goToTop()}}>ARTWORK</button>
+      <MediaQuery minDeviceWidth={550}>
+        <div id="footer">
+          <div id="footernav">
+            <button className="navigation" onClick={() => {this.props.setNavigationView("HOME"); this.goToTop()}}>HOME</button>
+            <button className="navigation" onClick={() => {this.props.setNavigationView("PROJECTS"); this.goToTop()}}>PROJECTS</button>
+            <button className="navigation" onClick={() => {this.props.setNavigationView("ARTWORK"); this.goToTop()}}>ARTWORK</button>
+          </div>
+          <div id="footerexternallinks">
+            <a target="_blank" href="https://www.linkedin.com/in/huntertread/">linkedIn</a>
+            <a target="_blank" href="https://github.com/huntertread">gitHub</a>
+          </div>
         </div>
-        <div id="footerexternallinks">
-          <a target="_blank" href="https://www.linkedin.com/in/huntertread/">linkedIn</a>
-          <a target="_blank" href="https://github.com/huntertread">gitHub</a>
-        </div>
-      </div>
+      </MediaQuery>
     )
   }
 }

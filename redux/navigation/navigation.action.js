@@ -4,3 +4,10 @@ export const setNavigationView = page => {
     payload: page
   };
 };
+
+export const setHamburgerState = state => {
+  return {
+    type: "SET_HAMBURGER",
+    payload: state
+  };
+};

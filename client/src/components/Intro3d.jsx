@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import noise from "simplex-noise";
 import * as THREE from "three";
 
 class Intro3d extends Component {
